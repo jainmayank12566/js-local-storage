@@ -7,6 +7,8 @@ buttons.addEventListener("click",()=>{
     console.log(value);
     window.location.reload()
 })
-window.addEventListener("load",()=>{
-    id.innerText=localStorage.getItem("name");
+window.addEventListener("load",()=>{//when our page reloads
+    if(localStorage.getItem("name")){
+        id.innerText=localStorage.getItem("name");
+    }
 })
